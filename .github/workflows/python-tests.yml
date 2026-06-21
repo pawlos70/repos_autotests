@@ -32,3 +32,15 @@ jobs:
     - name: Uruchomienie pytest
       run: |
         pytest
+        
+  other-things:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Nazwa systemu
+      run: |
+        uname -a
+     
+    - name: Ile miejsca na dysku
+      run: |
+        df -h
